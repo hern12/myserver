@@ -9,7 +9,7 @@ app.use(cors())
 var port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
-  request('https://api.instagram.com/v1/users/self/media/recent/?access_token=2461863410.05b0267.35ab4c7c1f234a6282d8fc1b96318d8b&count=8', function (error, response, body) {
+  request('https://api.instagram.com/v1/users/self/media/recent/?access_token=6070044666.2f82be4.75275ed21029461788d485f5516ebf3f&count=8', function (error, response, body) {
     res.send(body);
   });
 })
